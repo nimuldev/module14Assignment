@@ -7,7 +7,7 @@ exports.createUser=async (req,res)=>{
     try {
 
         const reqBody=req.body;
-        console.log(reqBody)
+       
         await userRegistrationModel.create(reqBody);
         res.json({status:"Success",message:"New User Create"})
 
